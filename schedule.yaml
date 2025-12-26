@@ -1,177 +1,218 @@
-timezone: "Asia/Shanghai"
-
+timezone: Asia/Shanghai
 window:
   past_weeks: 26
   future_weeks: 2
-
 classes:
-  - date: "2025-12-17"
-    start: "20:25"
-    duration_min: 60
-    title: "BodyJam"
-    location: "新辰里酒仙桥"
-    instructor: "Super Frank"
-    content:
-      - "BodyJam 104"
-      - "BodyJam 114"
-      - "BodyJam 111"
-      - "BodyJam 73Bonus"
-
-  - date: "2025-12-18"
-    start: "20:15"
-    duration_min: 60
-    title: "BodyJam"
-    location: "国贸远洋光华"
-    instructor: "Super Frank"
-    content:
-      - "BodyJam 104"
-      - "BodyJam 39"
-
-  - date: "2025-12-19"
-    start: "12:00"
-    duration_min: 60
-    title: "BodyJam"
-    location: "望京梦秀广场"
-    instructor: "Super Frank"
-    content:
-      - "BodyJam 82"
-      - "BodyJam 39"
-
-  - date: "2025-12-20"
-    start: "15:50"
-    duration_min: 60
-    title: "BodyJam"
-    location: "太阳宫凯德Mall"
-    instructor: "Super Frank"
-    content:
-      - "BodyJam UNKNOWN"
-      - "BodyJam UNKNOWN"
-
-  - date: "2025-12-21"
-    start: "12:00"
-    duration_min: 60
-    title: "LMD"
-    location: "望京梦秀广场"
-    instructor: "Super Frank & Lia佳琪"
-    content:
-      - "BodyJam 83"
-      - "BodyJam 99"
-
-  - date: "2025-12-21"
-    start: "13:00"
-    duration_min: 60
-    title: "BodyJam"
-    location: "望京梦秀广场"
-    instructor: "Super Frank"
-    content:
-      - "BodyJam 83"
-      - "BodyJam 80"
-
-  - date: "2025-12-23"
-    start: "18:00"
-    duration_min: 60
-    title: "LMD"
-    location: "永安里双子座"
-    instructor: "Super Frank"
-    content:
-      - "LMD"
-      - "LMD"
-
-  - date: "2025-12-24"
-    start: "20:25"
-    duration_min: 60
-    title: "BodyJam"
-    location: "新辰里酒仙桥"
-    instructor: "Super Frank"
-    content:
-      - "BodyJam 83"
-      - "BodyJam 99"
-
-  - date: "2025-12-25"
-    start: "20:15"
-    duration_min: 60
-    title: "BodyJam"
-    location: "国贸远洋光华"
-    instructor: "Super Frank"
-    content:
-      - "BodyJam 67"
-      - "BodyJam 99"
-
-  - date: "2025-12-26"
-    start: "12:00"
-    duration_min: 60
-    title: "BodyJam"
-    location: "望京梦秀广场"
-    instructor: "Super Frank"
-    content:
-      - "BodyJam 67"
-      - "BodyJam 89"
-
-  - date: "2025-12-27"
-    start: "15:50"
-    duration_min: 60
-    title: "BodyJam"
-    location: "太阳宫凯德Mall"
-    instructor: "Super Frank"
-    content:
-      - "BodyJam UNKNOWN"
-      - "BodyJam UNKNOWN"
-
-  - date: "2025-12-28"
-    start: "12:10"
-    duration_min: 60
-    title: "BodyJam"
-    location: "望京梦秀广场"
-    instructor: "Super Frank"
-    content:
-      - "BodyJam UNKNOWN"
-      - "BodyJam UNKNOWN"
-
-  - date: "2025-12-28"
-    start: "16:00"
-    duration_min: 60
-    title: "LMD"
-    location: "甜水园"
-    instructor: "Super Frank & Sherry & Core"
-    content:
-      - "LMD HIPHOP & HOUSE & CONTEMPORARY"
-
-  - date: "2025-12-31"
-    start: "20:25"
-    duration_min: 60
-    title: "BodyJam"
-    location: "新辰里酒仙桥"
-    instructor: "Super Frank"
-    content:
-      - "BodyJam UNKNOWN"
-      - "BodyJam UNKNOWN"
-
-  - date: "2026-01-01"
-    start: "20:15"
-    duration_min: 60
-    title: "BodyJam"
-    location: "国贸远洋光华"
-    instructor: "Super Frank"
-    content:
-      - "BodyJam UNKNOWN"
-      - "BodyJam UNKNOWN"
-
-  - date: "2026-01-03"
-    start: "18:10"
-    duration_min: 60
-    title: "BodyJam"
-    location: "超猩太阳宫凯德Mall"
-    instructor: "Super Frank"
-    content:
-      - "BodyJam UNKNOWN"
-      - "BodyJam UNKNOWN"
-
-  - date: "2026-01-04"
-    start: "12:10"
-    duration_min: 60
-    title: "BodyJam"
-    location: "望京梦秀广场"
-    instructor: "Super Frank"
-    content:
-      - "BodyJam UNKNOWN"
-      - "BodyJam UNKNOWN"
+- date: '2025-12-17'
+  start: '20:25'
+  duration_min: 60
+  title: BodyJam
+  location: 新辰里酒仙桥
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 104
+      mix:
+      - BodyJam 114
+      - BodyJam 103
+    lower:
+      main:
+      - BodyJam 111
+      mix:
+      - BodyJam 73 Bonus
+- date: '2025-12-18'
+  start: '20:15'
+  duration_min: 60
+  title: BodyJam
+  location: 国贸远洋光华
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 104
+    lower:
+      main:
+      - BodyJam 39
+- date: '2025-12-19'
+  start: '12:00'
+  duration_min: 60
+  title: BodyJam
+  location: 望京梦秀广场
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 82
+    lower:
+      main:
+      - BodyJam 39
+- date: '2025-12-20'
+  start: '15:50'
+  duration_min: 60
+  title: BodyJam
+  location: 太阳宫凯德Mall
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam UNKNOWN
+    lower:
+      main:
+      - BodyJam UNKNOWN
+- date: '2025-12-21'
+  start: '12:00'
+  duration_min: 60
+  title: LMD
+  location: 望京梦秀广场
+  instructor: Super Frank & Lia佳琪
+  content:
+  - BodyJam 83
+  - BodyJam 99
+- date: '2025-12-21'
+  start: '13:00'
+  duration_min: 60
+  title: BodyJam
+  location: 望京梦秀广场
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 83
+    lower:
+      main:
+      - BodyJam 80
+- date: '2025-12-23'
+  start: '18:00'
+  duration_min: 60
+  title: LMD
+  location: 永安里双子座
+  instructor: Super Frank
+  content:
+  - LMD
+  - LMD
+- date: '2025-12-24'
+  start: '20:25'
+  duration_min: 60
+  title: BodyJam
+  location: 新辰里酒仙桥
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 83
+    lower:
+      main:
+      - BodyJam 99
+- date: '2025-12-25'
+  start: '20:15'
+  duration_min: 60
+  title: BodyJam
+  location: 国贸远洋光华
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 67
+    lower:
+      main:
+      - BodyJam 99
+- date: '2025-12-26'
+  start: '12:00'
+  duration_min: 60
+  title: BodyJam
+  location: 望京梦秀广场
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 67
+    lower:
+      main:
+      - BodyJam 89
+- date: '2025-12-27'
+  start: '15:50'
+  duration_min: 60
+  title: BodyJam
+  location: 太阳宫凯德Mall
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam UNKNOWN
+    lower:
+      main:
+      - BodyJam UNKNOWN
+- date: '2025-12-28'
+  start: '12:10'
+  duration_min: 60
+  title: BodyJam
+  location: 望京梦秀广场
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam UNKNOWN
+    lower:
+      main:
+      - BodyJam UNKNOWN
+- date: '2025-12-28'
+  start: '16:00'
+  duration_min: 60
+  title: LMD
+  location: 甜水园
+  instructor: Super Frank & Sherry & Core
+  content:
+  - LMD HIPHOP & HOUSE & CONTEMPORARY
+- date: '2025-12-31'
+  start: '20:25'
+  duration_min: 60
+  title: BodyJam
+  location: 新辰里酒仙桥
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam UNKNOWN
+    lower:
+      main:
+      - BodyJam UNKNOWN
+- date: '2026-01-01'
+  start: '20:15'
+  duration_min: 60
+  title: BodyJam
+  location: 国贸远洋光华
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam UNKNOWN
+    lower:
+      main:
+      - BodyJam UNKNOWN
+- date: '2026-01-03'
+  start: '18:10'
+  duration_min: 60
+  title: BodyJam
+  location: 超猩太阳宫凯德Mall
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam UNKNOWN
+    lower:
+      main:
+      - BodyJam UNKNOWN
+- date: '2026-01-04'
+  start: '12:10'
+  duration_min: 60
+  title: BodyJam
+  location: 望京梦秀广场
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam UNKNOWN
+    lower:
+      main:
+      - BodyJam UNKNOWN
