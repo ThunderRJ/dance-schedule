@@ -15,7 +15,6 @@ classes:
       - BodyJam 104
       mix:
       - BodyJam 114
-      - BodyJam 103
     lower:
       main:
       - BodyJam 111
