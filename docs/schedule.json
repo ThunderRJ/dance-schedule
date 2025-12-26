@@ -1,0 +1,116 @@
+{
+  "events": [
+    {
+      "date": "2025-12-17",
+      "start": "20:25",
+      "title": "BodyJam",
+      "location": "新辰里酒仙桥",
+      "instructor": "Super Frank"
+    },
+    {
+      "date": "2025-12-18",
+      "start": "20:15",
+      "title": "BodyJam",
+      "location": "国贸远洋光华",
+      "instructor": "Super Frank"
+    },
+    {
+      "date": "2025-12-19",
+      "start": "12:00",
+      "title": "BodyJam",
+      "location": "望京梦秀广场",
+      "instructor": "Super Frank"
+    },
+    {
+      "date": "2025-12-20",
+      "start": "15:50",
+      "title": "BodyJam",
+      "location": "太阳宫凯德Mall",
+      "instructor": "Super Frank"
+    },
+    {
+      "date": "2025-12-21",
+      "start": "12:00",
+      "title": "LMD",
+      "location": "望京梦秀广场",
+      "instructor": "Super Frank & Lia佳琪"
+    },
+    {
+      "date": "2025-12-21",
+      "start": "13:00",
+      "title": "BodyJam",
+      "location": "望京梦秀广场",
+      "instructor": "Super Frank"
+    },
+    {
+      "date": "2025-12-23",
+      "start": "18:00",
+      "title": "LMD",
+      "location": "永安里双子座",
+      "instructor": "Super Frank"
+    },
+    {
+      "date": "2025-12-24",
+      "start": "20:25",
+      "title": "BodyJam",
+      "location": "新辰里酒仙桥",
+      "instructor": "Super Frank"
+    },
+    {
+      "date": "2025-12-25",
+      "start": "20:15",
+      "title": "BodyJam",
+      "location": "国贸远洋光华",
+      "instructor": "Super Frank"
+    },
+    {
+      "date": "2025-12-26",
+      "start": "12:00",
+      "title": "BodyJam",
+      "location": "望京梦秀广场",
+      "instructor": "Super Frank"
+    },
+    {
+      "date": "2025-12-27",
+      "start": "15:50",
+      "title": "BodyJam",
+      "location": "太阳宫凯德Mall",
+      "instructor": "Super Frank"
+    },
+    {
+      "date": "2025-12-28",
+      "start": "12:10",
+      "title": "BodyJam",
+      "location": "望京梦秀广场",
+      "instructor": "Super Frank"
+    },
+    {
+      "date": "2025-12-28",
+      "start": "16:00",
+      "title": "LMD",
+      "location": "甜水园",
+      "instructor": "Super Frank & Sherry & Core"
+    },
+    {
+      "date": "2025-12-31",
+      "start": "20:25",
+      "title": "BodyJam",
+      "location": "新辰里酒仙桥",
+      "instructor": "Super Frank"
+    },
+    {
+      "date": "2026-01-01",
+      "start": "20:15",
+      "title": "BodyJam",
+      "location": "国贸远洋光华",
+      "instructor": "Super Frank"
+    },
+    {
+      "date": "2026-01-03",
+      "start": "18:10",
+      "title": "BodyJam",
+      "location": "超猩太阳宫凯德Mall",
+      "instructor": "Super Frank"
+    }
+  ]
+}

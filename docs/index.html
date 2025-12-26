@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Dance Schedule</title>
+<style>
+body{margin:0;background:#0b0c10;color:#e8e8ea;font-family:-apple-system,BlinkMacSystemFont}
+.wrap{max-width:1100px;margin:0 auto;padding:18px}
+.card{background:#111421;border:1px solid #22263a;border-radius:14px;padding:14px;margin-top:12px}
+.day{margin-top:10px}
+.ev{background:#0c0f18;border:1px solid #1e2234;border-radius:12px;padding:10px;margin-top:6px}
+.muted{opacity:.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h2>近30天课表（历史）</h2>
+<div class="card" id="week">加载中…</div>
+</div>
+<script>
+const TZ="Asia/Shanghai";
+function todayISO(){
+  return new Intl.DateTimeFormat("en-CA",{timeZone:TZ}).format(new Date());
+}
+function addDays(d,n){
+  const x=new Date(d+"T00:00:00Z");x.setUTCDate(x.getUTCDate()+n);
+  return x.toISOString().slice(0,10);
+}
+function weekdayCN(d){return["周日","周一","周二","周三","周四","周五","周六"][new Date(d).getDay()]}
+function esc(s){return(s??"").toString().replace(/[&<>]/g,c=>({ "&":"&amp;","<":"&lt;",">":"&gt;"}[c]))}
+function render(schedule){
+  const el=document.getElementById("week");
+  const today=todayISO();
+  const start=addDays(today,-30);
+  const evs=schedule.events.filter(e=>e.date>=start&&e.date<=today);
+  const byDay={};
+  evs.forEach(e=>(byDay[e.date]=byDay[e.date]||[]).push(e));
+  let html="";
+  for(let i=0;i<=30;i++){
+    const d=addDays(start,i);
+    const list=byDay[d]||[];
+    html+=`<div class="day"><b>${d} ${weekdayCN(d)}</b>`;
+    html+=list.length?list.map(e=>`<div class="ev">${esc(e.start)} ${esc(e.title)}<div class="muted">${esc(e.instructor||"")}</div></div>`).join(""):`<div class="muted">无课程</div>`;
+    html+="</div>";
+  }
+  el.innerHTML=html;
+}
+fetch("./schedule.json").then(r=>r.json()).then(render);
+</script>
+</body>
+</html>
