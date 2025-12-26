@@ -2,7 +2,7 @@ timezone: "Asia/Shanghai"
 
 window:
   past_weeks: 26
-  future_weeks: 1
+  future_weeks: 2
 
 classes:
   - date: "2025-12-18"
