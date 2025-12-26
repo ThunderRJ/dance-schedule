@@ -80,9 +80,11 @@ for it in items:
         f"DTSTART;TZID=Asia/Shanghai:{st.strftime('%Y%m%dT%H%M%S')}",
         f"DTEND;TZID=Asia/Shanghai:{et.strftime('%Y%m%dT%H%M%S')}",
         f"SUMMARY:{ics_escape(it.title)}",
+        f"LOCATION:{ics_escape(it.location)}" if it.location else None,
         f"DESCRIPTION:{ics_escape(chr(10).join(desc))}",
         "END:VEVENT"
     ]
+    ve = [x for x in ve if x is not None]
     for l in ve: lines.extend(fold(l))
 lines.append("END:VCALENDAR")
 
