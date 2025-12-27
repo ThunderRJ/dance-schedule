@@ -1,9 +1,9 @@
 {
-  "generated_at": "2025-12-27T08:20:40+08:00",
+  "generated_at": "2025-12-28T00:23:55+08:00",
   "timezone": "Asia/Shanghai",
   "window": {
-    "start_date": "2025-11-27",
-    "end_date": "2026-01-03"
+    "start_date": "2025-11-28",
+    "end_date": "2026-01-04"
   },
   "events": [
     {
@@ -457,6 +457,38 @@
       "duration_min": 60,
       "title": "BodyJam",
       "location": "超猩太阳宫凯德Mall",
+      "instructor": "Super Frank",
+      "bodyjam": {
+        "upper": {
+          "main": [
+            "BodyJam UNKNOWN"
+          ]
+        },
+        "lower": {
+          "main": [
+            "BodyJam UNKNOWN"
+          ]
+        }
+      },
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam UNKNOWN"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam UNKNOWN"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam UNKNOWN",
+        "lower_text": "下：BodyJam UNKNOWN"
+      }
+    },
+    {
+      "date": "2026-01-04",
+      "start": "12:10",
+      "duration_min": 60,
+      "title": "BodyJam",
+      "location": "望京梦秀广场",
       "instructor": "Super Frank",
       "bodyjam": {
         "upper": {
