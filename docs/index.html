@@ -6,43 +6,43 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Dance Schedule</title>
   <style>
+    :root {
+      --bg: #0a0b10;
+      --panel: #0f1220;
+      --panel2: #0c0f18;
+      --border: #22263a;
+      --border2: #2a2f47;
+      --text: #e8e8ea;
+      --muted: #a8adbf;
+      --shadow: 0 20px 60px rgba(0, 0, 0, .45);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      background: #0b0c10;
-      color: #e8e8ea;
-      font-family: -apple-system, BlinkMacSystemFont
+      background: radial-gradient(1200px 800px at 20% -10%, rgba(110, 140, 255, .18), transparent 55%),
+        radial-gradient(900px 700px at 80% 0%, rgba(180, 120, 255, .12), transparent 55%),
+        var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial;
+    }
+
+    a {
+      color: inherit;
     }
 
     .wrap {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 18px
+      padding: 16px 14px 40px;
     }
 
-    .card {
-      background: #111421;
-      border: 1px solid #22263a;
-      border-radius: 14px;
-      padding: 14px;
-      margin-top: 12px
-    }
-
-    .day {
-      margin-top: 10px
-    }
-
-    .ev {
-      background: #0c0f18;
-      border: 1px solid #1e2234;
-      border-radius: 12px;
-      padding: 10px;
-      margin-top: 6px
-    }
-
-    .muted {
-      opacity: .7
-    }
-
+    /* NAV */
     .nav {
       position: sticky;
       top: 0;
@@ -54,20 +54,31 @@
       padding: 10px 12px;
       margin-bottom: 14px;
       border-radius: 14px;
-      background: rgba(17, 20, 33, .85);
-      border: 1px solid #22263a;
+      background: rgba(17, 20, 33, .86);
+      border: 1px solid var(--border);
       backdrop-filter: blur(10px);
-    }
-
-    .brand {
-      font-weight: 700;
-      letter-spacing: .3px;
+      box-shadow: var(--shadow);
     }
 
     .nav-left {
       display: flex;
       flex-direction: column;
       gap: 4px;
+      min-width: 160px;
+    }
+
+    .brand {
+      font-weight: 800;
+      letter-spacing: .3px;
+      font-size: 16px;
+      line-height: 1.1;
+    }
+
+    .nav-mid {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      min-width: 160px;
     }
 
     .nav-right {
@@ -75,19 +86,21 @@
       gap: 10px;
       flex-wrap: wrap;
       justify-content: flex-end;
+      align-items: center;
     }
 
     .btn {
       appearance: none;
-      border: 1px solid #2a2f47;
-      background: #0c0f18;
-      color: #e8e8ea;
-      padding: 8px 10px;
+      border: 1px solid var(--border2);
+      background: var(--panel2);
+      color: var(--text);
+      padding: 9px 10px;
       border-radius: 12px;
       font-size: 14px;
       cursor: pointer;
       text-decoration: none;
       line-height: 1;
+      white-space: nowrap;
     }
 
     .btn:hover {
@@ -97,97 +110,186 @@
     .btn:active {
       transform: translateY(1px);
     }
+
+    .muted {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.35;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, .03), rgba(255, 255, 255, .01));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 14px;
+      box-shadow: var(--shadow);
+    }
+
+    h1,
+    h2 {
+      margin: 6px 0 10px;
+      font-size: 22px;
+      letter-spacing: .2px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    .day {
+      padding: 10px 10px 12px;
+      border: 1px solid rgba(255, 255, 255, .06);
+      border-radius: 14px;
+      background: rgba(8, 10, 18, .45);
+    }
+
+    .day+.day {
+      margin-top: 10px;
+    }
+
+    .day-title {
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .ev {
+      padding: 10px 10px 10px;
+      margin-top: 8px;
+      border-radius: 12px;
+      background: rgba(15, 18, 32, .62);
+      border: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .ev b {
+      font-weight: 800;
+    }
+
+    .stats-list {
+      margin: 6px 0 0;
+      padding-left: 18px;
+    }
+
+    .stats-list li {
+      margin: 6px 0;
+    }
+
+    /* Toast */
+    #toast {
+      position: fixed;
+      left: 50%;
+      bottom: 24px;
+      transform: translateX(-50%);
+      background: var(--panel2);
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border2);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity .25s;
+      z-index: 999;
+      box-shadow: var(--shadow);
+      font-size: 14px;
+    }
+
+    @media (max-width: 720px) {
+      .nav-mid {
+        display: none;
+      }
+
+      .btn {
+        font-size: 13px;
+        padding: 8px 9px;
+      }
+
+      h1,
+      h2 {
+        font-size: 18px;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <div class="nav">
-    <div class="nav-left">
-      <div class="brand">Dance Schedule</div>
-    </div>
+  <div class="wrap">
+    <div class="nav">
+      <div class="nav-left">
+        <div class="brand">Dance Schedule</div>
+        <div class="muted" id="last-updated">上次更新：加载中…</div>
+      </div>
 
-    <div class="nav-left">
-      <!-- <div class="brand">Dance Schedule</div> -->
-      <div class="muted" id="last-updated">上次更新：加载中…</div>
-    </div>
-
-    <div class="nav-right">
+      <div class="nav-mid">
+        <div class="muted" id="range-hint"></div>
+      </div>
 
       <div class="nav-right">
         <a class="btn" id="btn-webcal" href="#" rel="noopener">macOS 订阅（推荐）</a>
-        <a class="btn" href="./schedule.ics" rel="noopener">通用订阅 / 下载 ICS</a>
+        <a class="btn" id="btn-ics" href="./schedule.ics" rel="noopener">通用订阅 / 下载 ICS</a>
         <button class="btn" id="btn-copy-ics" type="button">复制订阅链接</button>
+        <button class="btn" id="btn-jump-stats" type="button">查看稀缺榜</button>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div class="card" id="stats-card">
+        <h2>BodyJam 稀缺榜（Top 10）</h2>
+        <div class="muted" id="stats">加载中…</div>
       </div>
 
-      <button class="btn" id="btn-jump-stats" type="button">
-        查看稀缺榜
-      </button>
+      <div class="card">
+        <h2>近30天课表（历史）</h2>
+        <div class="muted" id="week">加载中…</div>
+      </div>
     </div>
   </div>
-  <div class="card" id="stats-card">
-    <h2>BodyJam 稀缺榜（Top 10）</h2>
-    <div id="stats">加载中…</div>
-  </div>
 
-  <div class="wrap">
-    <h2>近30天课表（历史）</h2>
-    <div class="card" id="week">加载中…</div>
-  </div>
+  <div id="toast"></div>
+
   <script>
     const TZ = "Asia/Shanghai";
+
+    function esc(s) {
+      return (s ?? "").toString().replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+    }
+
+    function toast(text) {
+      const el = document.getElementById("toast");
+      if (!el) return;
+      el.textContent = text;
+      el.style.opacity = "1";
+      setTimeout(() => el.style.opacity = "0", 1600);
+    }
+
     function todayISO() {
-      return new Intl.DateTimeFormat("en-CA", { timeZone: TZ }).format(new Date());
-    }
-    function addDays(d, n) {
-      const x = new Date(d + "T00:00:00Z"); x.setUTCDate(x.getUTCDate() + n);
-      return x.toISOString().slice(0, 10);
-    }
-    function weekdayCN(d) { return ["周日", "周一", "周二", "周三", "周四", "周五", "周六"][new Date(d).getDay()] }
-    function esc(s) { return (s ?? "").toString().replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c])) }
-    function renderEvent(e) {
-      const loc = e.location ? ` <span class="muted">· ${esc(e.location)}</span>` : "";
-      const head = `<div><b>${esc(e.start)}</b> ${esc(e.title)}${loc}</div>`;
-      const coach = e.instructor ? `<div class="muted">${esc(e.instructor)}</div>` : "";
-
-      const bj = e.bodyjam_lines || {};
-      const up = bj.upper_text ? `<div class="muted">${esc(bj.upper_text)}</div>` : "";
-      const lo = bj.lower_text ? `<div class="muted">${esc(bj.lower_text)}</div>` : "";
-
-      return `<div class="ev">${head}${coach}${up}${lo}</div>`;
-      console.log("BJ", e.date, e.start, e.title, e.bodyjam_lines);
+      // Keep it simple; schedule dates are ISO strings already.
+      const d = new Date();
+      const y = d.getFullYear();
+      const m = String(d.getMonth() + 1).padStart(2, "0");
+      const dd = String(d.getDate()).padStart(2, "0");
+      return `${y}-${m}-${dd}`;
     }
 
-    function renderSchedule(schedule) {
-      const el = document.getElementById("week");
-      const today = todayISO();
-      const start = addDays(today, -30);
-      const evs = schedule.events.filter(e => e.date >= start && e.date <= today);
-      const byDay = {};
-      evs.forEach(e => (byDay[e.date] = byDay[e.date] || []).push(e));
-      let html = "";
-      for (let i = 0; i <= 30; i++) {
-        const d = addDays(start, i);
-        const list = byDay[d] || [];
-        html += `<div class="day"><b>${d} ${weekdayCN(d)}</b>`;
-        html += list.length ? list.map(renderEvent).join("") : `<div class="muted">无课程</div>`;
-        html += "</div>";
-      }
-      el.innerHTML = html;
+    function addDays(iso, n) {
+      const d = new Date(iso + "T00:00:00Z");
+      d.setUTCDate(d.getUTCDate() + n);
+      return d.toISOString().slice(0, 10);
     }
 
-    //fetch("./schedule.json").then(r => r.json()).then(render);
-    fetch("./schedule.json").then(r => r.json()).then(schedule => {
-      renderLastUpdated(schedule);
-      renderSchedule(schedule);
-    });
-
-    //从 schedule.json 读取 generated_at 并格式化显示
-    //const TZ = "Asia/Shanghai";
+    function weekdayCN(iso) {
+      const names = ["周日", "周一", "周二", "周三", "周四", "周五", "周六"];
+      const d = new Date(iso + "T00:00:00Z");
+      return names[d.getUTCDay()];
+    }
 
     function formatUpdated(iso) {
       if (!iso) return "未知";
       const d = new Date(iso);
-      // 用中文 + 上海时区显示
       return new Intl.DateTimeFormat("zh-CN", {
         timeZone: TZ,
         year: "numeric", month: "2-digit", day: "2-digit",
@@ -199,41 +301,81 @@
     function renderLastUpdated(schedule) {
       const el = document.getElementById("last-updated");
       if (!el) return;
-      const t = schedule?.generated_at;
-      el.textContent = "上次更新：" + formatUpdated(t) + "（" + TZ + "）";
+      el.textContent = `上次更新：${formatUpdated(schedule?.generated_at)}（${TZ}）`;
+
+      const hint = document.getElementById("range-hint");
+      if (hint && schedule?.window?.start_date && schedule?.window?.end_date) {
+        hint.textContent = `展示范围：${schedule.window.start_date} ～ ${schedule.window.end_date}`;
+      }
     }
 
+    function renderEvent(e) {
+      const loc = e.location ? ` <span class="muted">· ${esc(e.location)}</span>` : "";
+      const head = `<div><b>${esc(e.start)}</b> ${esc(e.title)}${loc}</div>`;
+      const coach = e.instructor ? `<div class="muted">${esc(e.instructor)}</div>` : "";
 
-    document.getElementById("btn-jump-stats")?.addEventListener("click", () => {
-      document.getElementById("stats-card")?.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
+      const bj = e.bodyjam_lines || {};
+      const up = bj.upper_text ? `<div class="muted">${esc(bj.upper_text)}</div>` : "";
+      const lo = bj.lower_text ? `<div class="muted">${esc(bj.lower_text)}</div>` : "";
 
-    document.getElementById("btn-subscribe")?.addEventListener("click", (e) => {
-      const ua = navigator.userAgent || "";
-      const isiOS = /iPhone|iPad|iPod/i.test(ua);
-      if (!isiOS) return; // 非 iOS 不提示
-      // iOS 直接打开即可订阅，通常不用拦截
-    });
+      return `<div class="ev">${head}${coach}${up}${lo}</div>`;
+    }
 
-    (function () {
-      const btn = document.getElementById("btn-webcal");
-      if (!btn) return;
+    function renderSchedule(schedule) {
+      const el = document.getElementById("week");
+      if (!el) return;
 
-      const host = window.location.hostname;
-      const icsUrl = new URL("./schedule.ics", window.location.href);
+      const today = todayISO();
+      const start = addDays(today, -30);
 
-      // 本地（localhost）不提供 webcal，改为下载/打开 ICS
-      if (host === "localhost" || host === "127.0.0.1") {
-        btn.href = icsUrl.toString();
-        btn.textContent = "下载 ICS（本地测试）";
+      const evs = Array.isArray(schedule?.events) ? schedule.events : [];
+      const inRange = evs.filter(e => e && e.date && e.date >= start && e.date <= today);
+
+      const byDay = {};
+      inRange.forEach(e => {
+        (byDay[e.date] = byDay[e.date] || []).push(e);
+      });
+
+      let html = "";
+      for (let i = 0; i <= 30; i++) {
+        const d = addDays(start, i);
+        const list = (byDay[d] || []).slice().sort((a, b) => (a.start || "").localeCompare(b.start || ""));
+        html += `<div class="day"><div class="day-title">${esc(d)} ${weekdayCN(d)}</div>`;
+        html += list.length ? list.map(renderEvent).join("") : `<div class="muted">无课程</div>`;
+        html += `</div>`;
+      }
+
+      el.innerHTML = html;
+    }
+
+    function renderStats(stats) {
+      const el = document.getElementById("stats");
+      if (!el) return;
+
+      const rows = stats && Array.isArray(stats.rows) ? stats.rows : [];
+      if (rows.length === 0) {
+        el.innerHTML = `<div class="muted">暂无统计数据</div>`;
         return;
       }
 
-      // 线上：生成 webcal://ThunderRJ.github.io/dance-schedule/schedule.ics
-      btn.href = "webcal://" + icsUrl.host + icsUrl.pathname;
-      btn.textContent = "macOS 订阅（推荐）";
-    })();
+      const top = rows.slice(0, 10);
+      const range = stats?.range?.start && stats?.range?.end
+        ? `<div class="muted">统计范围：${esc(stats.range.start)} ～ ${esc(stats.range.end)}（${esc(stats.timezone || TZ)}）</div>`
+        : "";
 
+      const list = `<ol class="stats-list">${top.map(r => {
+        const last = r.last_seen ? `（上次：${esc(r.last_seen)}，距今 ${esc(r.days_since_last_seen ?? "")} 天）` : "";
+        return `<li><b>${esc(r.item)}</b> — ${esc(r.count)} 次 ${last}</li>`;
+      }).join("")
+        }</ol>`;
+
+      el.innerHTML = range + list;
+    }
+
+    // Buttons
+    document.getElementById("btn-jump-stats")?.addEventListener("click", () => {
+      document.getElementById("stats-card")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
 
     document.getElementById("btn-copy-ics")?.addEventListener("click", async () => {
       try {
@@ -241,36 +383,56 @@
         await navigator.clipboard.writeText(url);
         toast("订阅链接已复制");
       } catch (e) {
-        alert("复制失败，请手动复制：https://ThunderRJ.github.io/dance-schedule/schedule.ics");
+        // fallback
+        const url = "https://ThunderRJ.github.io/dance-schedule/schedule.ics";
+        try {
+          prompt("复制订阅链接：", url);
+        } catch (_) {
+          alert("复制失败，请手动复制：" + url);
+        }
       }
     });
 
-    function toast(text) {
-      const el = document.getElementById("toast");
-      if (!el) return;
-      el.textContent = text;
-      el.style.opacity = "1";
-      setTimeout(() => el.style.opacity = "0", 1600);
+    // webcal link (prod) + localhost fallback
+    (function () {
+      const btn = document.getElementById("btn-webcal");
+      if (!btn) return;
+
+      const host = window.location.hostname;
+      const icsUrl = new URL("./schedule.ics", window.location.href);
+
+      if (host === "localhost" || host === "127.0.0.1") {
+        btn.href = icsUrl.toString();
+        btn.textContent = "下载 ICS（本地测试）";
+        return;
+      }
+
+      btn.href = "webcal://" + icsUrl.host + icsUrl.pathname;
+      btn.textContent = "macOS 订阅（推荐）";
+    })();
+
+    // Load schedule + stats (independent, with cache-busting)
+    async function loadAll() {
+      // schedule
+      const scheduleRes = await fetch("./schedule.json?v=" + Date.now());
+      const schedule = await scheduleRes.json();
+      renderLastUpdated(schedule);
+      renderSchedule(schedule);
+
+      // stats (don't block schedule rendering)
+      try {
+        const statsRes = await fetch("./stats/bodyjam_rarest_latest.json?v=" + Date.now());
+        if (!statsRes.ok) throw new Error("HTTP " + statsRes.status);
+        const stats = await statsRes.json();
+        renderStats(stats);
+      } catch (err) {
+        const el = document.getElementById("stats");
+        if (el) el.innerHTML = `<div class="muted">稀缺榜加载失败：${esc(String(err))}</div>`;
+      }
     }
 
+    loadAll();
   </script>
-
-  <div id="toast" style="
-  position:fixed;
-  left:50%;
-  bottom:24px;
-  transform:translateX(-50%);
-  background:#0c0f18;
-  color:#fff;
-  padding:8px 12px;
-  border-radius:12px;
-  border:1px solid #2a2f47;
-  opacity:0;
-  pointer-events:none;
-  transition:opacity .25s;
-  z-index:999;
-"></div>
-
 </body>
 
 </html>
