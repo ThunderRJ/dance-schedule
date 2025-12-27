@@ -1,11 +1,43 @@
 {
-  "generated_at": "2025-12-28T01:11:56+08:00",
+  "generated_at": "2025-12-28T01:23:57+08:00",
   "timezone": "Asia/Shanghai",
   "window": {
     "start_date": "2025-11-28",
     "end_date": "2026-01-04"
   },
   "events": [
+    {
+      "date": "2025-12-02",
+      "start": "20:35",
+      "duration_min": 60,
+      "title": "BodyJam 新套路发布",
+      "location": "望京万象汇精品馆",
+      "instructor": "Super Frank & Lia佳琪",
+      "bodyjam": {
+        "upper": {
+          "main": [
+            "BodyJam 114"
+          ]
+        },
+        "lower": {
+          "main": [
+            "BodyJam 114"
+          ]
+        }
+      },
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam 114"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam 114"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam 114",
+        "lower_text": "下：BodyJam 114"
+      }
+    },
     {
       "date": "2025-12-03",
       "start": "20:25",
