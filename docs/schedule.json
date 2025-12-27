@@ -1,6 +1,10 @@
 {
-  "generated_at": "2025-12-27T11:49:56+08:00",
+  "generated_at": "2025-12-27T08:20:40+08:00",
   "timezone": "Asia/Shanghai",
+  "window": {
+    "start_date": "2025-11-27",
+    "end_date": "2026-01-03"
+  },
   "events": [
     {
       "date": "2025-12-17",
@@ -27,7 +31,22 @@
           ]
         }
       },
-      "content": []
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam 104"
+        ],
+        "upper_mix": [
+          "BodyJam 114"
+        ],
+        "lower_main": [
+          "BodyJam 111"
+        ],
+        "lower_mix": [
+          "BodyJam 73 Bonus"
+        ],
+        "upper_text": "上：BodyJam 104（mix：BodyJam 114）",
+        "lower_text": "下：BodyJam 111（mix：BodyJam 73 Bonus）"
+      }
     },
     {
       "date": "2025-12-18",
@@ -48,7 +67,18 @@
           ]
         }
       },
-      "content": []
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam 104"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam 39"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam 104",
+        "lower_text": "下：BodyJam 39"
+      }
     },
     {
       "date": "2025-12-19",
@@ -69,7 +99,18 @@
           ]
         }
       },
-      "content": []
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam 82"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam 39"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam 82",
+        "lower_text": "下：BodyJam 39"
+      }
     },
     {
       "date": "2025-12-20",
@@ -90,7 +131,18 @@
           ]
         }
       },
-      "content": []
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam UNKNOWN"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam UNKNOWN"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam UNKNOWN",
+        "lower_text": "下：BodyJam UNKNOWN"
+      }
     },
     {
       "date": "2025-12-21",
@@ -100,10 +152,14 @@
       "location": "望京梦秀广场",
       "instructor": "Super Frank & Lia佳琪",
       "bodyjam": null,
-      "content": [
-        "BodyJam 83",
-        "BodyJam 99"
-      ]
+      "bodyjam_lines": {
+        "upper_main": [],
+        "upper_mix": [],
+        "lower_main": [],
+        "lower_mix": [],
+        "upper_text": "",
+        "lower_text": ""
+      }
     },
     {
       "date": "2025-12-21",
@@ -124,7 +180,18 @@
           ]
         }
       },
-      "content": []
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam 83"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam 80"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam 83",
+        "lower_text": "下：BodyJam 80"
+      }
     },
     {
       "date": "2025-12-23",
@@ -134,10 +201,14 @@
       "location": "永安里双子座",
       "instructor": "Super Frank",
       "bodyjam": null,
-      "content": [
-        "LMD",
-        "LMD"
-      ]
+      "bodyjam_lines": {
+        "upper_main": [],
+        "upper_mix": [],
+        "lower_main": [],
+        "lower_mix": [],
+        "upper_text": "",
+        "lower_text": ""
+      }
     },
     {
       "date": "2025-12-24",
@@ -158,7 +229,18 @@
           ]
         }
       },
-      "content": []
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam 83"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam 99"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam 83",
+        "lower_text": "下：BodyJam 99"
+      }
     },
     {
       "date": "2025-12-25",
@@ -179,7 +261,18 @@
           ]
         }
       },
-      "content": []
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam 67"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam 99"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam 67",
+        "lower_text": "下：BodyJam 99"
+      }
     },
     {
       "date": "2025-12-26",
@@ -200,7 +293,18 @@
           ]
         }
       },
-      "content": []
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam 67"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam 89"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam 67",
+        "lower_text": "下：BodyJam 89"
+      }
     },
     {
       "date": "2025-12-27",
@@ -221,7 +325,18 @@
           ]
         }
       },
-      "content": []
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam UNKNOWN"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam UNKNOWN"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam UNKNOWN",
+        "lower_text": "下：BodyJam UNKNOWN"
+      }
     },
     {
       "date": "2025-12-28",
@@ -242,7 +357,18 @@
           ]
         }
       },
-      "content": []
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam UNKNOWN"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam UNKNOWN"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam UNKNOWN",
+        "lower_text": "下：BodyJam UNKNOWN"
+      }
     },
     {
       "date": "2025-12-28",
@@ -252,9 +378,14 @@
       "location": "甜水园",
       "instructor": "Super Frank & Sherry & Core",
       "bodyjam": null,
-      "content": [
-        "LMD HIPHOP & HOUSE & CONTEMPORARY"
-      ]
+      "bodyjam_lines": {
+        "upper_main": [],
+        "upper_mix": [],
+        "lower_main": [],
+        "lower_mix": [],
+        "upper_text": "",
+        "lower_text": ""
+      }
     },
     {
       "date": "2025-12-31",
@@ -275,7 +406,18 @@
           ]
         }
       },
-      "content": []
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam UNKNOWN"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam UNKNOWN"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam UNKNOWN",
+        "lower_text": "下：BodyJam UNKNOWN"
+      }
     },
     {
       "date": "2026-01-01",
@@ -296,7 +438,18 @@
           ]
         }
       },
-      "content": []
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam UNKNOWN"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam UNKNOWN"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam UNKNOWN",
+        "lower_text": "下：BodyJam UNKNOWN"
+      }
     },
     {
       "date": "2026-01-03",
@@ -317,7 +470,18 @@
           ]
         }
       },
-      "content": []
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam UNKNOWN"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam UNKNOWN"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam UNKNOWN",
+        "lower_text": "下：BodyJam UNKNOWN"
+      }
     }
   ]
 }
