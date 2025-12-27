@@ -42,10 +42,82 @@
     .muted {
       opacity: .7
     }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 12px;
+      margin-bottom: 14px;
+      border-radius: 14px;
+      background: rgba(17, 20, 33, .85);
+      border: 1px solid #22263a;
+      backdrop-filter: blur(10px);
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: .3px;
+    }
+
+    .nav-right {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .btn {
+      appearance: none;
+      border: 1px solid #2a2f47;
+      background: #0c0f18;
+      color: #e8e8ea;
+      padding: 8px 10px;
+      border-radius: 12px;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      line-height: 1;
+    }
+
+    .btn:hover {
+      filter: brightness(1.08);
+    }
+
+    .btn:active {
+      transform: translateY(1px);
+    }
   </style>
 </head>
 
 <body>
+  <div class="nav">
+    <div class="nav-left">
+      <div class="brand">Dance Schedule</div>
+    </div>
+
+    <div class="nav-right">
+
+      <div class="nav-right">
+        <a class="btn" id="btn-webcal" href="#" rel="noopener">macOS 订阅（推荐）</a>
+        <a class="btn" href="./schedule.ics" rel="noopener">通用订阅 / 下载 ICS</a>
+        <button class="btn" id="btn-copy-ics" type="button">复制订阅链接</button>
+      </div>
+
+      <button class="btn" id="btn-jump-stats" type="button">
+        查看稀缺榜
+      </button>
+    </div>
+  </div>
+  <div class="card" id="stats-card">
+    <h2>BodyJam 稀缺榜（Top 10）</h2>
+    <div id="stats">加载中…</div>
+  </div>
+
   <div class="wrap">
     <h2>近30天课表（历史）</h2>
     <div class="card" id="week">加载中…</div>
@@ -92,7 +164,74 @@
       el.innerHTML = html;
     }
     fetch("./schedule.json").then(r => r.json()).then(render);
+
+    document.getElementById("btn-jump-stats")?.addEventListener("click", () => {
+      document.getElementById("stats-card")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+
+    document.getElementById("btn-subscribe")?.addEventListener("click", (e) => {
+      const ua = navigator.userAgent || "";
+      const isiOS = /iPhone|iPad|iPod/i.test(ua);
+      if (!isiOS) return; // 非 iOS 不提示
+      // iOS 直接打开即可订阅，通常不用拦截
+    });
+
+    (function () {
+      const btn = document.getElementById("btn-webcal");
+      if (!btn) return;
+
+      const host = window.location.hostname;
+      const icsUrl = new URL("./schedule.ics", window.location.href);
+
+      // 本地（localhost）不提供 webcal，改为下载/打开 ICS
+      if (host === "localhost" || host === "127.0.0.1") {
+        btn.href = icsUrl.toString();
+        btn.textContent = "下载 ICS（本地测试）";
+        return;
+      }
+
+      // 线上：生成 webcal://ThunderRJ.github.io/dance-schedule/schedule.ics
+      btn.href = "webcal://" + icsUrl.host + icsUrl.pathname;
+      btn.textContent = "macOS 订阅（推荐）";
+    })();
+
+
+    document.getElementById("btn-copy-ics")?.addEventListener("click", async () => {
+      try {
+        const url = new URL("./schedule.ics", window.location.href).toString();
+        await navigator.clipboard.writeText(url);
+        toast("订阅链接已复制");
+      } catch (e) {
+        alert("复制失败，请手动复制：https://ThunderRJ.github.io/dance-schedule/schedule.ics");
+      }
+    });
+
+    function toast(text) {
+      const el = document.getElementById("toast");
+      if (!el) return;
+      el.textContent = text;
+      el.style.opacity = "1";
+      setTimeout(() => el.style.opacity = "0", 1600);
+    }
+
   </script>
+
+  <div id="toast" style="
+  position:fixed;
+  left:50%;
+  bottom:24px;
+  transform:translateX(-50%);
+  background:#0c0f18;
+  color:#fff;
+  padding:8px 12px;
+  border-radius:12px;
+  border:1px solid #2a2f47;
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .25s;
+  z-index:999;
+"></div>
+
 </body>
 
 </html>
