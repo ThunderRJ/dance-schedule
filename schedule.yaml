@@ -3,6 +3,19 @@ window:
   past_weeks: 26
   future_weeks: 2
 classes:
+- date: '2025-12-02'
+  start: '20:35'
+  duration_min: 60
+  title: BodyJam 新套路发布
+  location: 望京万象汇精品馆
+  instructor: Super Frank & Lia佳琪
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 114
+    lower:
+      main:
+      - BodyJam 114
 - date: '2025-12-03'
   start: '20:25'
   duration_min: 60
