@@ -64,6 +64,12 @@
       letter-spacing: .3px;
     }
 
+    .nav-left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
     .nav-right {
       display: flex;
       gap: 10px;
@@ -98,6 +104,11 @@
   <div class="nav">
     <div class="nav-left">
       <div class="brand">Dance Schedule</div>
+    </div>
+
+    <div class="nav-left">
+      <!-- <div class="brand">Dance Schedule</div> -->
+      <div class="muted" id="last-updated">上次更新：加载中…</div>
     </div>
 
     <div class="nav-right">
@@ -146,7 +157,7 @@
       console.log("BJ", e.date, e.start, e.title, e.bodyjam_lines);
     }
 
-    function render(schedule) {
+    function renderSchedule(schedule) {
       const el = document.getElementById("week");
       const today = todayISO();
       const start = addDays(today, -30);
@@ -163,7 +174,35 @@
       }
       el.innerHTML = html;
     }
-    fetch("./schedule.json").then(r => r.json()).then(render);
+
+    //fetch("./schedule.json").then(r => r.json()).then(render);
+    fetch("./schedule.json").then(r => r.json()).then(schedule => {
+      renderLastUpdated(schedule);
+      renderSchedule(schedule);
+    });
+
+    //从 schedule.json 读取 generated_at 并格式化显示
+    //const TZ = "Asia/Shanghai";
+
+    function formatUpdated(iso) {
+      if (!iso) return "未知";
+      const d = new Date(iso);
+      // 用中文 + 上海时区显示
+      return new Intl.DateTimeFormat("zh-CN", {
+        timeZone: TZ,
+        year: "numeric", month: "2-digit", day: "2-digit",
+        hour: "2-digit", minute: "2-digit",
+        hour12: false
+      }).format(d);
+    }
+
+    function renderLastUpdated(schedule) {
+      const el = document.getElementById("last-updated");
+      if (!el) return;
+      const t = schedule?.generated_at;
+      el.textContent = "上次更新：" + formatUpdated(t) + "（" + TZ + "）";
+    }
+
 
     document.getElementById("btn-jump-stats")?.addEventListener("click", () => {
       document.getElementById("stats-card")?.scrollIntoView({ behavior: "smooth", block: "start" });
