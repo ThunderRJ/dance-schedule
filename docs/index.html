@@ -179,6 +179,13 @@
       margin: 6px 0;
     }
 
+    /* 点击定位后的高亮效果 */
+    .flash {
+      outline: 2px solid rgba(110, 140, 255, .7);
+      outline-offset: 4px;
+    }
+
+
     /* Toast */
     #toast {
       position: fixed;
@@ -373,9 +380,23 @@
     }
 
     // Buttons
+    // document.getElementById("btn-jump-stats")?.addEventListener("click", () => {
+    //   document.getElementById("stats-card")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    // });
     document.getElementById("btn-jump-stats")?.addEventListener("click", () => {
-      document.getElementById("stats-card")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      const target = document.getElementById("stats-card");
+      const nav = document.querySelector(".nav");
+      if (!target) return;
+
+      const navH = nav ? nav.getBoundingClientRect().height : 0;
+      const y = window.scrollY + target.getBoundingClientRect().top - navH - 12; // 12px 间距
+      window.scrollTo({ top: y, behavior: "smooth" });
+
+      // 轻微高亮，提示用户定位到了哪里
+      target.classList.add("flash");
+      setTimeout(() => target.classList.remove("flash"), 900);
     });
+
 
     document.getElementById("btn-copy-ics")?.addEventListener("click", async () => {
       try {
