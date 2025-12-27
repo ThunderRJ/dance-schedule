@@ -1,11 +1,165 @@
 {
-  "generated_at": "2025-12-28T00:23:55+08:00",
+  "generated_at": "2025-12-28T01:11:56+08:00",
   "timezone": "Asia/Shanghai",
   "window": {
     "start_date": "2025-11-28",
     "end_date": "2026-01-04"
   },
   "events": [
+    {
+      "date": "2025-12-03",
+      "start": "20:25",
+      "duration_min": 60,
+      "title": "BodyJam 新套路发布",
+      "location": "新辰里酒仙桥",
+      "instructor": "Super Frank & 阿凯AKai",
+      "bodyjam": {
+        "upper": {
+          "main": [
+            "BodyJam 114"
+          ]
+        },
+        "lower": {
+          "main": [
+            "BodyJam 114"
+          ]
+        }
+      },
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam 114"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam 114"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam 114",
+        "lower_text": "下：BodyJam 114"
+      }
+    },
+    {
+      "date": "2025-12-04",
+      "start": "19:55",
+      "duration_min": 60,
+      "title": "BodyJam 新套路发布",
+      "location": "阳光金融中心",
+      "instructor": "Super Frank & Core",
+      "bodyjam": {
+        "upper": {
+          "main": [
+            "BodyJam 114"
+          ]
+        },
+        "lower": {
+          "main": [
+            "BodyJam 114"
+          ]
+        }
+      },
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam 114"
+        ],
+        "upper_mix": [],
+        "lower_main": [
+          "BodyJam 114"
+        ],
+        "lower_mix": [],
+        "upper_text": "上：BodyJam 114",
+        "lower_text": "下：BodyJam 114"
+      }
+    },
+    {
+      "date": "2025-12-10",
+      "start": "20:25",
+      "duration_min": 60,
+      "title": "BodyJam",
+      "location": "新辰里酒仙桥",
+      "instructor": "Super Frank",
+      "bodyjam": {
+        "upper": {
+          "main": [
+            "BodyJam 105"
+          ],
+          "mix": [
+            "BodyJam 112"
+          ]
+        },
+        "lower": {
+          "main": [
+            "BodyJam 84"
+          ],
+          "mix": [
+            "BodyJam 79",
+            "BodyJam 114"
+          ]
+        }
+      },
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam 105"
+        ],
+        "upper_mix": [
+          "BodyJam 112"
+        ],
+        "lower_main": [
+          "BodyJam 84"
+        ],
+        "lower_mix": [
+          "BodyJam 79",
+          "BodyJam 114"
+        ],
+        "upper_text": "上：BodyJam 105（mix：BodyJam 112）",
+        "lower_text": "下：BodyJam 84（mix：BodyJam 79 / BodyJam 114）"
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "start": "20:15",
+      "duration_min": 60,
+      "title": "BodyJam",
+      "location": "国贸远洋光华",
+      "instructor": "Super Frank",
+      "bodyjam": {
+        "upper": {
+          "main": [
+            "BodyJam 105"
+          ],
+          "mix": [
+            "BodyJam 112",
+            "BodyJam 114"
+          ]
+        },
+        "lower": {
+          "main": [
+            "BodyJam 84"
+          ],
+          "mix": [
+            "BodyJam 79",
+            "BodyJam 114"
+          ]
+        }
+      },
+      "bodyjam_lines": {
+        "upper_main": [
+          "BodyJam 105"
+        ],
+        "upper_mix": [
+          "BodyJam 112",
+          "BodyJam 114"
+        ],
+        "lower_main": [
+          "BodyJam 84"
+        ],
+        "lower_mix": [
+          "BodyJam 79",
+          "BodyJam 114"
+        ],
+        "upper_text": "上：BodyJam 105（mix：BodyJam 112 / BodyJam 114）",
+        "lower_text": "下：BodyJam 84（mix：BodyJam 79 / BodyJam 114）"
+      }
+    },
     {
       "date": "2025-12-17",
       "start": "20:25",
@@ -316,26 +470,26 @@
       "bodyjam": {
         "upper": {
           "main": [
-            "BodyJam UNKNOWN"
+            "BodyJam 67"
           ]
         },
         "lower": {
           "main": [
-            "BodyJam UNKNOWN"
+            "BodyJam 39"
           ]
         }
       },
       "bodyjam_lines": {
         "upper_main": [
-          "BodyJam UNKNOWN"
+          "BodyJam 67"
         ],
         "upper_mix": [],
         "lower_main": [
-          "BodyJam UNKNOWN"
+          "BodyJam 39"
         ],
         "lower_mix": [],
-        "upper_text": "上：BodyJam UNKNOWN",
-        "lower_text": "下：BodyJam UNKNOWN"
+        "upper_text": "上：BodyJam 67",
+        "lower_text": "下：BodyJam 39"
       }
     },
     {
