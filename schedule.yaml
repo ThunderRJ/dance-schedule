@@ -3,6 +3,104 @@ window:
   past_weeks: 26
   future_weeks: 2
 classes:
+- date: '2025-11-02'
+  start: '12:10'
+  duration_min: 60
+  title: BodyJam
+  location: 望京梦秀广场
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 111
+      mix:
+      - BodyJam 108
+      - BodyJam 109
+    lower:
+      main:
+      - BodyJam 95
+- date: '2025-11-09'
+  start: '12:10'
+  duration_min: 60
+  title: BodyJam
+  location: 望京梦秀广场
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 74
+    lower:
+      main:
+      - BodyJam 71
+- date: '2025-11-12'
+  start: '20:25'
+  duration_min: 60
+  title: BodyJam
+  location: 新辰里酒仙桥
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 90
+    lower:
+      main:
+      - BodyJam 55
+- date: '2025-11-13'
+  start: '20:15'
+  duration_min: 60
+  title: BodyJam
+  location: 国贸远洋光华
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 95
+    lower:
+      main:
+      - BodyJam 90
+- date: '2025-11-15'
+  start: '20:20'
+  duration_min: 60
+  title: BodyJam
+  location: 国贸全能店
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam UNKNOWN
+    lower:
+      main:
+      - BodyJam UNKNOWN
+- date: '2025-11-16'
+  start: '12:10'
+  duration_min: 60
+  title: BodyJam
+  location: 望京梦秀广场
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 97
+      mix:
+      - BodyJam 84
+    lower:
+      main:
+      - BodyJam 102
+      mix:
+      - BodyJam 111
+- date: '2025-11-23'
+  start: '12:10'
+  duration_min: 60
+  title: BodyJam
+  location: 望京梦秀广场
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 112
+    lower:
+      main:
+      - BodyJam 82
 - date: '2025-12-02'
   start: '20:35'
   duration_min: 60
