@@ -3,6 +3,8 @@ name: Build Schedule
 on:
   push:
     branches: [ "main" ]
+      paths-ignore:
+      - "docs/**"
   schedule:
     - cron: "0 14 * * 5"
 

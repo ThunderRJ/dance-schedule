@@ -3,6 +3,69 @@ window:
   past_weeks: 26
   future_weeks: 2
 classes:
+- date: '2025-12-03'
+  start: '20:25'
+  duration_min: 60
+  title: BodyJam 新套路发布
+  location: 新辰里酒仙桥
+  instructor: Super Frank & 阿凯AKai
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 114
+    lower:
+      main:
+      - BodyJam 114
+- date: '2025-12-04'
+  start: '19:55'
+  duration_min: 60
+  title: BodyJam 新套路发布
+  location: 阳光金融中心
+  instructor: Super Frank & Core
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 114
+    lower:
+      main:
+      - BodyJam 114
+- date: '2025-12-10'
+  start: '20:25'
+  duration_min: 60
+  title: BodyJam
+  location: 新辰里酒仙桥
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 105
+      mix:
+      - BodyJam 112
+    lower:
+      main:
+      - BodyJam 84
+      mix:
+      - BodyJam 79
+      - BodyJam 114
+- date: '2025-12-11'
+  start: '20:15'
+  duration_min: 60
+  title: BodyJam
+  location: 国贸远洋光华
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 105
+      mix:
+      - BodyJam 112
+      - BodyJam 114
+    lower:
+      main:
+      - BodyJam 84
+      mix:
+      - BodyJam 79
+      - BodyJam 114
 - date: '2025-12-17'
   start: '20:25'
   duration_min: 60
@@ -138,10 +201,10 @@ classes:
   bodyjam:
     upper:
       main:
-      - BodyJam UNKNOWN
+      - BodyJam 67
     lower:
       main:
-      - BodyJam UNKNOWN
+      - BodyJam 39
 - date: '2025-12-28'
   start: '12:10'
   duration_min: 60
