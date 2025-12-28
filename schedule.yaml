@@ -325,10 +325,10 @@ classes:
   bodyjam:
     upper:
       main:
-      - BodyJam UNKNOWN
+      - BodyJam 68
     lower:
       main:
-      - BodyJam UNKNOWN
+      - BodyJam 39
 - date: '2025-12-28'
   start: '16:00'
   duration_min: 60
