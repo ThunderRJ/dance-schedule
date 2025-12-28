@@ -77,106 +77,113 @@
     },
     {
       "rank": 11,
+      "item": "BodyJam 68",
+      "count": 1,
+      "last_seen": "2025-12-28",
+      "days_since_last_seen": 0
+    },
+    {
+      "rank": 12,
       "item": "BodyJam 90",
       "count": 2,
       "last_seen": "2025-11-13",
       "days_since_last_seen": 45
     },
     {
-      "rank": 12,
+      "rank": 13,
       "item": "BodyJam 95",
       "count": 2,
       "last_seen": "2025-11-13",
       "days_since_last_seen": 45
     },
     {
-      "rank": 13,
+      "rank": 14,
       "item": "BodyJam 79",
       "count": 2,
       "last_seen": "2025-12-11",
       "days_since_last_seen": 17
     },
     {
-      "rank": 14,
+      "rank": 15,
       "item": "BodyJam 105",
       "count": 2,
       "last_seen": "2025-12-11",
       "days_since_last_seen": 17
     },
     {
-      "rank": 15,
+      "rank": 16,
       "item": "BodyJam 104",
       "count": 2,
       "last_seen": "2025-12-18",
       "days_since_last_seen": 10
     },
     {
-      "rank": 16,
+      "rank": 17,
       "item": "BodyJam 82",
       "count": 2,
       "last_seen": "2025-12-19",
       "days_since_last_seen": 9
     },
     {
-      "rank": 17,
+      "rank": 18,
+      "item": "BodyJam UNKNOWN",
+      "count": 2,
+      "last_seen": "2025-12-20",
+      "days_since_last_seen": 8
+    },
+    {
+      "rank": 19,
       "item": "BodyJam 83",
       "count": 2,
       "last_seen": "2025-12-24",
       "days_since_last_seen": 4
     },
     {
-      "rank": 18,
+      "rank": 20,
       "item": "BodyJam 99",
       "count": 2,
       "last_seen": "2025-12-25",
       "days_since_last_seen": 3
     },
     {
-      "rank": 19,
+      "rank": 21,
       "item": "BodyJam 84",
       "count": 3,
       "last_seen": "2025-12-11",
       "days_since_last_seen": 17
     },
     {
-      "rank": 20,
+      "rank": 22,
       "item": "BodyJam 112",
       "count": 3,
       "last_seen": "2025-12-11",
       "days_since_last_seen": 17
     },
     {
-      "rank": 21,
+      "rank": 23,
       "item": "BodyJam 111",
       "count": 3,
       "last_seen": "2025-12-17",
       "days_since_last_seen": 11
     },
     {
-      "rank": 22,
+      "rank": 24,
       "item": "BodyJam 114",
       "count": 3,
       "last_seen": "2025-12-17",
       "days_since_last_seen": 11
     },
     {
-      "rank": 23,
-      "item": "BodyJam 39",
-      "count": 3,
-      "last_seen": "2025-12-27",
-      "days_since_last_seen": 1
-    },
-    {
-      "rank": 24,
+      "rank": 25,
       "item": "BodyJam 67",
       "count": 3,
       "last_seen": "2025-12-27",
       "days_since_last_seen": 1
     },
     {
-      "rank": 25,
-      "item": "BodyJam UNKNOWN",
-      "count": 3,
+      "rank": 26,
+      "item": "BodyJam 39",
+      "count": 4,
       "last_seen": "2025-12-28",
       "days_since_last_seen": 0
     }
