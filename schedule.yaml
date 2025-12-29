@@ -3,6 +3,24 @@ window:
   past_weeks: 26
   future_weeks: 2
 classes:
+- date: '2025-11-01'
+  start: '19:20'
+  duration_min: 60
+  title: BodyJam
+  location: 颐堤港全能店
+  instructor: Super Frank & ZIZI
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 111
+      mix:
+      - BodyJam 108
+    lower:
+      main:
+      - BodyJam 77
+      mix:
+      - BodyJam 112
+      - BodyJam 113
 - date: '2025-11-02'
   start: '12:10'
   duration_min: 60
@@ -19,6 +37,45 @@ classes:
     lower:
       main:
       - BodyJam 95
+- date: '2025-11-05'
+  start: '20:25'
+  duration_min: 60
+  title: BodyJam
+  location: 新辰里酒仙桥
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 102
+    lower:
+      main:
+      - BodyJam 71
+- date: '2025-11-06'
+  start: '20:15'
+  duration_min: 60
+  title: BodyJam
+  location: 国贸远洋光华
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam 102
+    lower:
+      main:
+      - BodyJam 71
+- date: '2025-11-08'
+  start: '20:20'
+  duration_min: 60
+  title: BodyJam
+  location: 国贸全能店
+  instructor: Super Frank
+  bodyjam:
+    upper:
+      main:
+      - BodyJam UNKNOWN
+    lower:
+      main:
+      - BodyJam UNKNOWN
 - date: '2025-11-09'
   start: '12:10'
   duration_min: 60
