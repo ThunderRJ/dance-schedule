@@ -1,75 +1,11 @@
 {
-  "generated_at": "2026-01-02T22:22:42+08:00",
+  "generated_at": "2026-01-09T22:26:41+08:00",
   "timezone": "Asia/Shanghai",
   "window": {
-    "start_date": "2025-12-03",
-    "end_date": "2026-01-09"
+    "start_date": "2025-12-10",
+    "end_date": "2026-01-16"
   },
   "events": [
-    {
-      "date": "2025-12-03",
-      "start": "20:25",
-      "duration_min": 60,
-      "title": "BodyJam 新套路发布",
-      "location": "新辰里酒仙桥",
-      "instructor": "Super Frank & 阿凯AKai",
-      "bodyjam": {
-        "upper": {
-          "main": [
-            "BodyJam 114"
-          ]
-        },
-        "lower": {
-          "main": [
-            "BodyJam 114"
-          ]
-        }
-      },
-      "bodyjam_lines": {
-        "upper_main": [
-          "BodyJam 114"
-        ],
-        "upper_mix": [],
-        "lower_main": [
-          "BodyJam 114"
-        ],
-        "lower_mix": [],
-        "upper_text": "上：BodyJam 114",
-        "lower_text": "下：BodyJam 114"
-      }
-    },
-    {
-      "date": "2025-12-04",
-      "start": "19:55",
-      "duration_min": 60,
-      "title": "BodyJam 新套路发布",
-      "location": "阳光金融中心",
-      "instructor": "Super Frank & Core",
-      "bodyjam": {
-        "upper": {
-          "main": [
-            "BodyJam 114"
-          ]
-        },
-        "lower": {
-          "main": [
-            "BodyJam 114"
-          ]
-        }
-      },
-      "bodyjam_lines": {
-        "upper_main": [
-          "BodyJam 114"
-        ],
-        "upper_mix": [],
-        "lower_main": [
-          "BodyJam 114"
-        ],
-        "lower_mix": [],
-        "upper_text": "上：BodyJam 114",
-        "lower_text": "下：BodyJam 114"
-      }
-    },
     {
       "date": "2025-12-10",
       "start": "20:25",
