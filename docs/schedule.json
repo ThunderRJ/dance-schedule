@@ -1,101 +1,11 @@
 {
-  "generated_at": "2026-01-09T22:26:41+08:00",
+  "generated_at": "2026-01-16T22:25:55+08:00",
   "timezone": "Asia/Shanghai",
   "window": {
-    "start_date": "2025-12-10",
-    "end_date": "2026-01-16"
+    "start_date": "2025-12-17",
+    "end_date": "2026-01-23"
   },
   "events": [
-    {
-      "date": "2025-12-10",
-      "start": "20:25",
-      "duration_min": 60,
-      "title": "BodyJam",
-      "location": "新辰里酒仙桥",
-      "instructor": "Super Frank",
-      "bodyjam": {
-        "upper": {
-          "main": [
-            "BodyJam 105"
-          ],
-          "mix": [
-            "BodyJam 112"
-          ]
-        },
-        "lower": {
-          "main": [
-            "BodyJam 84"
-          ],
-          "mix": [
-            "BodyJam 79",
-            "BodyJam 114"
-          ]
-        }
-      },
-      "bodyjam_lines": {
-        "upper_main": [
-          "BodyJam 105"
-        ],
-        "upper_mix": [
-          "BodyJam 112"
-        ],
-        "lower_main": [
-          "BodyJam 84"
-        ],
-        "lower_mix": [
-          "BodyJam 79",
-          "BodyJam 114"
-        ],
-        "upper_text": "上：BodyJam 105（mix：BodyJam 112）",
-        "lower_text": "下：BodyJam 84（mix：BodyJam 79 / BodyJam 114）"
-      }
-    },
-    {
-      "date": "2025-12-11",
-      "start": "20:15",
-      "duration_min": 60,
-      "title": "BodyJam",
-      "location": "国贸远洋光华",
-      "instructor": "Super Frank",
-      "bodyjam": {
-        "upper": {
-          "main": [
-            "BodyJam 105"
-          ],
-          "mix": [
-            "BodyJam 112",
-            "BodyJam 114"
-          ]
-        },
-        "lower": {
-          "main": [
-            "BodyJam 84"
-          ],
-          "mix": [
-            "BodyJam 79",
-            "BodyJam 114"
-          ]
-        }
-      },
-      "bodyjam_lines": {
-        "upper_main": [
-          "BodyJam 105"
-        ],
-        "upper_mix": [
-          "BodyJam 112",
-          "BodyJam 114"
-        ],
-        "lower_main": [
-          "BodyJam 84"
-        ],
-        "lower_mix": [
-          "BodyJam 79",
-          "BodyJam 114"
-        ],
-        "upper_text": "上：BodyJam 105（mix：BodyJam 112 / BodyJam 114）",
-        "lower_text": "下：BodyJam 84（mix：BodyJam 79 / BodyJam 114）"
-      }
-    },
     {
       "date": "2025-12-17",
       "start": "20:25",
