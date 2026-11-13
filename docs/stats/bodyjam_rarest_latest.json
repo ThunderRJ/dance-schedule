@@ -1,177 +1,142 @@
 {
   "range": {
-    "start": "2025-11-07",
-    "end": "2026-11-07"
+    "start": "2025-11-14",
+    "end": "2026-11-14"
   },
   "timezone": "Asia/Shanghai",
   "rows": [
     {
       "rank": 1,
-      "item": "BodyJam 71",
+      "item": "BodyJam 97",
       "count": 1,
-      "last_seen": "2025-11-09",
+      "last_seen": "2025-11-16",
       "days_since_last_seen": 363
     },
     {
       "rank": 2,
-      "item": "BodyJam 74",
+      "item": "BodyJam 102",
       "count": 1,
-      "last_seen": "2025-11-09",
+      "last_seen": "2025-11-16",
       "days_since_last_seen": 363
     },
     {
       "rank": 3,
-      "item": "BodyJam 55",
-      "count": 1,
-      "last_seen": "2025-11-12",
-      "days_since_last_seen": 360
-    },
-    {
-      "rank": 4,
-      "item": "BodyJam 95",
-      "count": 1,
-      "last_seen": "2025-11-13",
-      "days_since_last_seen": 359
-    },
-    {
-      "rank": 5,
-      "item": "BodyJam 97",
-      "count": 1,
-      "last_seen": "2025-11-16",
-      "days_since_last_seen": 356
-    },
-    {
-      "rank": 6,
-      "item": "BodyJam 102",
-      "count": 1,
-      "last_seen": "2025-11-16",
-      "days_since_last_seen": 356
-    },
-    {
-      "rank": 7,
       "item": "BodyJam 73 Bonus",
       "count": 1,
       "last_seen": "2025-12-17",
-      "days_since_last_seen": 325
+      "days_since_last_seen": 332
     },
     {
-      "rank": 8,
+      "rank": 4,
       "item": "BodyJam 80",
       "count": 1,
       "last_seen": "2025-12-21",
-      "days_since_last_seen": 321
+      "days_since_last_seen": 328
     },
     {
-      "rank": 9,
+      "rank": 5,
       "item": "BodyJam 89",
       "count": 1,
       "last_seen": "2025-12-26",
-      "days_since_last_seen": 316
-    },
-    {
-      "rank": 10,
-      "item": "BodyJam 68",
-      "count": 1,
-      "last_seen": "2025-12-28",
-      "days_since_last_seen": 314
-    },
-    {
-      "rank": 11,
-      "item": "BodyJam 90",
-      "count": 2,
-      "last_seen": "2025-11-13",
-      "days_since_last_seen": 359
-    },
-    {
-      "rank": 12,
-      "item": "BodyJam 79",
-      "count": 2,
-      "last_seen": "2025-12-11",
-      "days_since_last_seen": 331
-    },
-    {
-      "rank": 13,
-      "item": "BodyJam 105",
-      "count": 2,
-      "last_seen": "2025-12-11",
-      "days_since_last_seen": 331
-    },
-    {
-      "rank": 14,
-      "item": "BodyJam 111",
-      "count": 2,
-      "last_seen": "2025-12-17",
-      "days_since_last_seen": 325
-    },
-    {
-      "rank": 15,
-      "item": "BodyJam 104",
-      "count": 2,
-      "last_seen": "2025-12-18",
-      "days_since_last_seen": 324
-    },
-    {
-      "rank": 16,
-      "item": "BodyJam 82",
-      "count": 2,
-      "last_seen": "2025-12-19",
       "days_since_last_seen": 323
     },
     {
-      "rank": 17,
+      "rank": 6,
+      "item": "BodyJam 68",
+      "count": 1,
+      "last_seen": "2025-12-28",
+      "days_since_last_seen": 321
+    },
+    {
+      "rank": 7,
+      "item": "BodyJam 79",
+      "count": 2,
+      "last_seen": "2025-12-11",
+      "days_since_last_seen": 338
+    },
+    {
+      "rank": 8,
+      "item": "BodyJam 105",
+      "count": 2,
+      "last_seen": "2025-12-11",
+      "days_since_last_seen": 338
+    },
+    {
+      "rank": 9,
+      "item": "BodyJam 111",
+      "count": 2,
+      "last_seen": "2025-12-17",
+      "days_since_last_seen": 332
+    },
+    {
+      "rank": 10,
+      "item": "BodyJam 104",
+      "count": 2,
+      "last_seen": "2025-12-18",
+      "days_since_last_seen": 331
+    },
+    {
+      "rank": 11,
+      "item": "BodyJam 82",
+      "count": 2,
+      "last_seen": "2025-12-19",
+      "days_since_last_seen": 330
+    },
+    {
+      "rank": 12,
       "item": "BodyJam 83",
       "count": 2,
       "last_seen": "2025-12-24",
-      "days_since_last_seen": 318
-    },
-    {
-      "rank": 18,
-      "item": "BodyJam 99",
-      "count": 2,
-      "last_seen": "2025-12-25",
-      "days_since_last_seen": 317
-    },
-    {
-      "rank": 19,
-      "item": "BodyJam 84",
-      "count": 3,
-      "last_seen": "2025-12-11",
-      "days_since_last_seen": 331
-    },
-    {
-      "rank": 20,
-      "item": "BodyJam 112",
-      "count": 3,
-      "last_seen": "2025-12-11",
-      "days_since_last_seen": 331
-    },
-    {
-      "rank": 21,
-      "item": "BodyJam 114",
-      "count": 3,
-      "last_seen": "2025-12-17",
       "days_since_last_seen": 325
     },
     {
-      "rank": 22,
+      "rank": 13,
+      "item": "BodyJam 99",
+      "count": 2,
+      "last_seen": "2025-12-25",
+      "days_since_last_seen": 324
+    },
+    {
+      "rank": 14,
+      "item": "BodyJam 84",
+      "count": 3,
+      "last_seen": "2025-12-11",
+      "days_since_last_seen": 338
+    },
+    {
+      "rank": 15,
+      "item": "BodyJam 112",
+      "count": 3,
+      "last_seen": "2025-12-11",
+      "days_since_last_seen": 338
+    },
+    {
+      "rank": 16,
+      "item": "BodyJam 114",
+      "count": 3,
+      "last_seen": "2025-12-17",
+      "days_since_last_seen": 332
+    },
+    {
+      "rank": 17,
       "item": "BodyJam 67",
       "count": 3,
       "last_seen": "2025-12-27",
-      "days_since_last_seen": 315
+      "days_since_last_seen": 322
     },
     {
-      "rank": 23,
+      "rank": 18,
       "item": "BodyJam 39",
       "count": 4,
       "last_seen": "2025-12-28",
-      "days_since_last_seen": 314
+      "days_since_last_seen": 321
     },
     {
-      "rank": 24,
+      "rank": 19,
       "item": "BodyJam UNKNOWN",
-      "count": 7,
+      "count": 6,
       "last_seen": "2026-01-04",
-      "days_since_last_seen": 307
+      "days_since_last_seen": 314
     }
   ]
 }
